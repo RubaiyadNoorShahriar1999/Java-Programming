@@ -1,0 +1,40 @@
+class SingleTone{
+
+    public int myNum = 10;
+    private static SingleTone object = new SingleTone();
+
+    private SingleTone(){
+
+    }
+
+    protected static SingleTone getInstence(){
+        return object;
+    }
+}
+
+class Main{
+    public static void main(String[] args){
+
+        SingleTone obj1 = SingleTone.getInstence();
+        SingleTone obj2 = SingleTone.getInstence();
+        // SingleTone obj1 = new SingleTone();
+        // SingleTone obj2 = new SingleTone();
+
+        obj1.myNum = 20;
+        System.out.println(obj1.myNum);
+        System.out.println(obj2.myNum);
+
+        System.out.println();
+
+        obj2.myNum = 30;
+        System.out.println(obj1.myNum);
+        System.out.println(obj2.myNum);
+
+        System.out.println();
+
+        boolean myVar = obj1 == obj2;
+
+        System.out.println( myVar );
+
+    }
+}

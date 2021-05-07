@@ -1,0 +1,25 @@
+package child;
+import parent.Animal;
+
+public class Mammal extends Animal{
+   protected boolean hasHair;
+   protected boolean hasFur ;
+
+  public Mammal(boolean hasHair , boolean hasFur){
+    super(14.98, 120.0, "Brown");
+
+    this.hasHair = hasHair ;
+    this.hasFur = hasFur ;
+
+    System.out.println("Mammal: ");
+    this.display();
+    super.display();
+    System.out.println("\n");
+  }
+
+  public void display(){
+    System.out.println("\tHas Hair: " + hasHair);
+    System.out.println("\tHas Fur: " + hasFur);
+  }
+
+}

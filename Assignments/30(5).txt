@@ -1,0 +1,20 @@
+package child;
+import parent.Animal;
+
+public class Raptile extends Animal{
+     protected boolean biPolar;
+
+    public Raptile(boolean biPolar){
+
+        super(5.8, 0.450, "Silver-White");
+
+        this.biPolar = biPolar;
+        System.out.println("Raptile: ");
+
+        System.out.println( "\tBi-Polar: " + biPolar );
+
+        super.display();
+
+        System.out.println("\n");
+    }
+}

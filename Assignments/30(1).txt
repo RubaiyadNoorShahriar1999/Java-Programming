@@ -1,0 +1,15 @@
+package main;
+
+import parent.*;
+import child.*;
+
+public class Main{
+ 
+    public static void main(String[] args){
+        Raptile rp = new Raptile(true);
+        Lion ln = new Lion("tiger");
+        Mammal ml = new Mammal(true , false);
+
+        
+    }
+}

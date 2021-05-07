@@ -1,0 +1,15 @@
+package child;
+
+public class Lion  extends Mammal{
+     protected String name;
+
+    public Lion(String name){
+        super( true, true );
+        this.name = name;
+
+        System.out.println("Lion: ");
+        System.out.println("\tName: " + this.name);
+        super.display();
+        System.out.println("\n");
+    }
+}
